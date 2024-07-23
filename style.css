@@ -1,7 +1,7 @@
 .nunito-coffee-shop {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; 
+    font-weight: 400; /* Adjust weight as needed */
     font-style: normal;
 }
 
@@ -101,7 +101,7 @@ h1, h2 {
 form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
     padding: 20px;
     border: 1px solid #ddd;
@@ -138,12 +138,14 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .menu-item {
     margin: 15px;
     text-align: center;
-    max-width: 300px;
+    max-width: 250px; 
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -234,6 +236,7 @@ footer {
 
     .menu-item {
         margin: 10px 0;
+        max-width: 300px;
     }
 }
 
@@ -254,13 +257,19 @@ footer {
         flex-direction: column;
     }
 
+    .menu-item {
+        margin: 10px 0;
+        max-width: 100%;
+    }
+
     .menu-item img {
-        width: 100%;
+        height: auto;
     }
 }
+
 #about .content {
     text-align: justify;
-    max-width: 800px;
+    max-width: 700px; 
     margin: auto;
     padding: 20px;
 }
