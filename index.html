@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OVERCOFFEE</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>wHERE GOOD CONVERSATIONS HAPPEN</h1>
+        <h1 class="nunito-coffee-shop">WHERE GOOD CONVERSATIONS HAPPEN</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -23,62 +21,90 @@
     </header>
 
     <section id="home">
-        <h2>About Us</h2>
-        <p>At Overcoffee our mission is simple: to serve the best coffee experience. We believe that every cup of coffee should be an experience to savor, a moment of delight, and a source of comfort.</p>
+        <h2 class="nunito-coffee-shop">About Us</h2>
+        <p class="nunito-coffee-shop">At Overcoffee,our mission is simple: to serve the best coffee experience. We believe that every cup of coffee should be an experience to savor, a moment of delight, and a source of comfort..</p>
+        <img src="images/coffee-shop.jpg" alt="Coffee Shop">
     </section>
 
     <section id="menu">
-        <h2>Menu</h2>
-        <ul>
-            <li>Just Black - P110.00</li>
-            <li>Over Caramel - P 120.00</li>
-            <li>Over Hazelnut - P120.00</li>
-            <li>Over Horchata - P135.00</li>
-            <li>Over Spanish - P135.00</li>
-            <li>Over Matcha - P140.00</li>
-        </ul>
+        <h2 class="nunito-coffee-shop">Menu</h2>
+        <div class="menu-item">
+            <img src="images/espresso.jpg" alt="Just Black">
+            <div>
+                <h3 class="nunito-coffee-shop">Just Black</h3>
+                <p class="nunito-coffee-shop">P115.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://unsplash.com/photos/a-cup-of-coffee-on-a-pink-background-9oRpzGpC0SM" alt="Over Caramel">
+            <div>
+                <h3 class="nunito-coffee-shop">Over Caramel</h3>
+                <p class="nunito-coffee-shop">P125.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://unsplash.com/photos/a-cup-of-coffee-on-a-pink-background-9oRpzGpC0SM" alt="Over Hazelnut">
+            <div>
+                <h3 class="nunito-coffee-shop">Over Hazelnut</h3>
+                <p class="nunito-coffee-shop">P125.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://unsplash.com/photos/a-cup-of-coffee-on-a-pink-background-9oRpzGpC0SM" alt="Over Horchata">
+            <div>
+                <h3 class="nunito-coffee-shop">Over Horchata</h3>
+                <p class="nunito-coffee-shop">P130.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://unsplash.com/photos/a-cup-of-coffee-on-a-pink-background-9oRpzGpC0SM" alt="Over Spanish">
+            <div>
+                <h3 class="nunito-coffee-shop">Over Spanish</h3>
+                <p class="nunito-coffee-shop">P130.00</p>
+            </div>
+        </div>
     </section>
 
     <section id="order">
-        <h2>Order Now</h2>
+        <h2 class="nunito-coffee-shop">Order Now</h2>
         <form id="order-form">
-            <label for="coffee">Choose your coffee:</label>
-            <select id="coffee" name="coffee">
-                <option value="espresso">Just Black</option>
-                <option value="latte">Over Caramel</option>
-                <option value="cappuccino">Over Hazelnut</option>
-                <option value="mocha">Over Horchata</option>
-                <option value="americano">Over Spanish</option>
-                <option value="americano">Over Matcha</option>
+            <label for="coffee" class="nunito-coffee-shop">Choose your coffee:</label>
+            <select id="coffee" name="coffee" class="nunito-coffee-shop">
+                <option value="just black">Just Black</option>
+                <option value="over caramel">Over Caramel</option>
+                <option value="over hazelnut">Over Hazelnut</option>
+                <option value="over horchata">Over Horchata</option>
+                <option value="over spanish">Over Spanish</option>
             </select>
 
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <label for="quantity" class="nunito-coffee-shop">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" class="nunito-coffee-shop">
 
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
+            <label for="name" class="nunito-coffee-shop">Your Name:</label>
+            <input type="text" id="name" name="name" required class="nunito-coffee-shop">
 
-            <label for="address">Delivery Address:</label>
-            <input type="text" id="address" name="address" required>
+            <label for="address" class="nunito-coffee-shop">Delivery Address:</label>
+            <input type="text" id="address" name="address" required class="nunito-coffee-shop">
 
-            <button type="submit">Place Order</button>
+            <button type="submit" class="nunito-coffee-shop">Place Order</button>
         </form>
 
         <div id="order-confirmation" style="display:none;">
-            <h3>Order Confirmation</h3>
-            <p id="order-details"></p>
+            <h3 class="nunito-coffee-shop">Order Confirmation</h3>
+            <p id="order-details" class="nunito-coffee-shop"></p>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: overcoffee18@gmail.com</p>
-        <p>Phone: 0908 388 0174</p>
+        <h2 class="nunito-coffee-shop">Contact Us</h2>
+        <p class="nunito-coffee-shop">Email: overcoffee18@gmail.com</p>
+        <p class="nunito-coffee-shop">Phone: 09083880174</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Overcoffee. All rights reserved.</p>
+        <p class="nunito-coffee-shop">&copy; 2024 Overcoffee. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
