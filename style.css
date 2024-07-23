@@ -1,7 +1,7 @@
 .nunito-coffee-shop {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* Adjust weight as needed */
+    font-weight: 400; 
     font-style: normal;
 }
 
@@ -10,10 +10,11 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    color: #333;
 }
 
 header {
-    background-color: rgba(62, 39, 35, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -22,12 +23,32 @@ header {
     z-index: 1000;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 nav ul {
@@ -39,24 +60,20 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    padding: 5px 10px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
 }
 
-nav .menu-toggle {
-    display: none;
-    background-color: #3e2723;
-    color: white;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px 20px;
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
 section {
@@ -67,6 +84,7 @@ section {
     align-items: center;
     text-align: center;
     min-height: 100vh;
+    color: #333;
 }
 
 .parallax {
@@ -80,27 +98,27 @@ h1, h2 {
     color: #3e2723;
 }
 
-h1, h2, p, label, button {
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-}
-
 form {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 600px;
     margin: auto;
     padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 label {
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 input, select, button {
     margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
@@ -108,6 +126,8 @@ button {
     background-color: #3e2723;
     color: white;
     cursor: pointer;
+    border: none;
+    font-size: 16px;
 }
 
 button:hover {
@@ -124,16 +144,25 @@ button:hover {
     margin: 15px;
     text-align: center;
     max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
 }
 
 .menu-item img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    display: block;
+}
+
+.menu-item div {
+    padding: 15px;
 }
 
 footer {
-    background-color: rgba(62, 39, 35, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     text-align: center;
     padding: 10px 20px;
@@ -156,7 +185,7 @@ footer {
     }
 
     form {
-        padding: 10px;
+        padding: 15px;
     }
 
     .menu-container {
@@ -177,7 +206,7 @@ footer {
         display: none;
     }
 
-    nav .menu-toggle {
+    .menu-toggle {
         display: block;
     }
 
@@ -188,7 +217,7 @@ footer {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: rgba(62, 39, 35, 0.8);
+        background-color: rgba(0, 0, 0, 0.9);
     }
 
     nav ul li {
@@ -229,9 +258,9 @@ footer {
         width: 100%;
     }
 }
-
 #about .content {
     text-align: justify;
     max-width: 800px;
     margin: auto;
+    padding: 20px;
 }
