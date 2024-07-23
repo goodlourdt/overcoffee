@@ -15,36 +15,38 @@
 </head>
 <body>
     <header>
-        <h1 class="nunito-coffee-shop">WHERE THE BEST CONVERSATIONS HAPPEN.</h1>
-        <nav>
-            <ul id="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#order">Order</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-        </nav>
+        <div class="header-container">
+            <h1 class="nunito-coffee-shop">OVERCOFFEE</h1>
+            <button class="menu-toggle">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="home" class="parallax" style="background-image: url('coffee3.jpg');">
         <div class="content">
-            <h2 class="nunito-coffee-shop">At Overcoffee, our mission is simple</h2>
-            <p class="nunito-coffee-shop">To serve the best coffee experience. We believe that every cup of coffee should be an experience to savor, a moment of delight, and a source of comfort.</p>
+            <h2 class="nunito-coffee-shop">Experience Coffee Like Never Before</h2>
+            <p class="nunito-coffee-shop">Discover the finest coffee with a touch of elegance and sophistication. Our carefully crafted blends ensure each sip is a moment of pure delight.</p>
         </div>
     </section>
 
-    <section id="about" class="parallax" style="background-image: url('coffee2.jpg');">
+    <section id="about">
         <div class="content">
             <h2 class="nunito-coffee-shop">About Us</h2>
-            <p class="nunito-coffee-shop">We take pride in our coffee beans, which are locally sourced from the finest coffee farms in the region. By partnering with local farmers, we ensure that our coffee is not only fresh and flavorful but also supports our community. Each bean is carefully selected and roasted to perfection, bringing out the unique flavors and rich aromas that make our coffee special.</p>
+            <p class="nunito-coffee-shop">At Overcoffee, we are passionate about bringing you the best coffee experience. Our beans are sourced from the finest farms and roasted to perfection. Join us and savor the unique flavors and aromas in every cup.</p>
         </div>
     </section>
 
-    <section id="menu" class="parallax" style="background-image: url('images/menu-bg.jpg');">
+    <section id="menu">
         <div class="content">
-            <h2 class="nunito-coffee-shop">Menu</h2>
+            <h2 class="nunito-coffee-shop">Our Menu</h2>
             <div class="menu-container">
                 <div class="menu-item">
                     <img src="coffee.jpg" alt="Just Black">
@@ -85,11 +87,11 @@
         </div>
     </section>
 
-    <section id="order" class="parallax" style="background-image: url('images/order-bg.jpg');">
+    <section id="order">
         <div class="content">
-            <h2 class="nunito-coffee-shop">Order Now</h2>
+            <h2 class="nunito-coffee-shop">Place Your Order</h2>
             <form id="order-form">
-                <label for="coffee" class="nunito-coffee-shop">Choose your coffee:</label>
+                <label for="coffee" class="nunito-coffee-shop">Select Coffee:</label>
                 <select id="coffee" name="coffee" class="nunito-coffee-shop">
                     <option value="just black">Just Black</option>
                     <option value="over caramel">Over Caramel</option>
@@ -117,10 +119,10 @@
         </div>
     </section>
 
-    <section id="contact" class="parallax" style="background-image: url('images/contact-bg.jpg');">
+    <section id="contact">
         <div class="content">
             <h2 class="nunito-coffee-shop">Contact Us</h2>
-            <p class="nunito-coffee-shop">Email: overcoffee18@gmail.com</p>
+            <p class="nunito-coffee-shop">Email: <a href="mailto:overcoffee18@gmail.com" class="nunito-coffee-shop">overcoffee18@gmail.com</a></p>
             <p class="nunito-coffee-shop">Phone: 0908 388 0174</p>
         </div>
     </section>
