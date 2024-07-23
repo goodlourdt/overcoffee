@@ -153,8 +153,8 @@ button:hover {
 /* Menu item styles */
 .menu-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid layout */
+    gap: 10px;
     max-width: 1200px;
     margin: auto;
 }
@@ -166,6 +166,7 @@ button:hover {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: #fff;
+    padding: 10px;
 }
 
 .menu-item img {
@@ -175,14 +176,7 @@ button:hover {
 }
 
 .menu-item div {
-    padding: 15px;
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 /* Responsive Design */
@@ -207,7 +201,7 @@ footer {
     }
 
     .menu-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Smaller menu items */
     }
 
     .menu-item {
@@ -254,7 +248,7 @@ footer {
     }
 
     .menu-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Two layers horizontally */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust for smaller screens */
     }
 
     .menu-item {
@@ -276,11 +270,10 @@ footer {
     }
 
     .menu-container {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Smaller screens */
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Smaller menu items for very small screens */
     }
 
     .menu-item {
-        margin: 10px 0;
         max-width: 100%; /* Full width for small screens */
     }
 
