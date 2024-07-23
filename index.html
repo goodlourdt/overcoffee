@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVERCOFFEE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>wHERE GOOD CONVERSATIONS HAPPEN</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>About Us</h2>
+        <p>At Overcoffee our mission is simple: to serve the best coffee experience. We believe that every cup of coffee should be an experience to savor, a moment of delight, and a source of comfort.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>Just Black - P110.00</li>
+            <li>Over Caramel - P 120.00</li>
+            <li>Over Hazelnut - P120.00</li>
+            <li>Over Horchata - P135.00</li>
+            <li>Over Spanish - P135.00</li>
+            <li>Over Matcha - P140.00</li>
+        </ul>
+    </section>
+
+    <section id="order">
+        <h2>Order Now</h2>
+        <form id="order-form">
+            <label for="coffee">Choose your coffee:</label>
+            <select id="coffee" name="coffee">
+                <option value="espresso">Just Black</option>
+                <option value="latte">Over Caramel</option>
+                <option value="cappuccino">Over Hazelnut</option>
+                <option value="mocha">Over Horchata</option>
+                <option value="americano">Over Spanish</option>
+                <option value="americano">Over Matcha</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+
+        <div id="order-confirmation" style="display:none;">
+            <h3>Order Confirmation</h3>
+            <p id="order-details"></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: overcoffee18@gmail.com</p>
+        <p>Phone: 0908 388 0174</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Overcoffee. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
